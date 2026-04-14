@@ -53,6 +53,9 @@ export default function RootLayout({ children }) {
                     <Link href="/about" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">
                       About
                     </Link>
+                    <Link href="/cursos" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">
+                      Cursos
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -92,7 +95,16 @@ export default function RootLayout({ children }) {
           </el-disclosure>
         </nav>
 
-        {children}
+        <main className="flex-1">
+          {children}
+        </main>
+
+        <footer className="border-t border-gray-800 text-center p-4">
+          <h3>@Sebastian Maldonado</h3>
+          <p>Cree la carpeta cursos, la ruta anidada about
+            y la ruta dinámica
+          </p>
+        </footer>
 
       </body>
     </html>
